@@ -1,0 +1,57 @@
+nav {
+    display: flex;
+    align-items: center;
+    padding: .5rem 5%;
+    justify-content: space-between;
+
+    --primaryColor: #565656;
+    --secColor: #008080;
+}
+
+ul, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navitem {
+    color: var(--primaryColor);
+}
+
+.apartment_item {
+    display: flex;
+    align-items: center;
+}
+
+.navbuttons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.login_btn {
+    border: 1px solid var(--secColor);
+    background-color: transparent;
+    color: var(--secColor);
+    transition: all .2s ease-in-out;
+}
+
+.login_btn:hover {
+    background-color: rgb(224, 255, 255);
+}
+
+.register_btn {
+    background-color: var(--secColor);
+    color: #fff;
+    border: 1px solid var(--secColor);
+    transition: all .2s ease-in-out;
+}
+
+.register_btn:hover {
+    background-color: #005a5a;
+}

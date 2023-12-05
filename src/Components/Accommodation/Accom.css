@@ -1,0 +1,18 @@
+.accom_section {
+    margin-top: 10rem;
+    padding: 1rem 5%;
+    line-height: 1.5;
+}
+
+.accom_header {
+    text-align: center;
+    color: #008080;
+    font-size: 1.25rem;
+}
+
+.accom_subtext {
+    text-align: center;
+    color: #707070;
+    width: 40%;
+    margin: auto;
+}
