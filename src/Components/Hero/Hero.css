@@ -94,3 +94,44 @@ h1, p {
 .hero_box-btn:hover {
     background-color: #ececec;
 }
+
+/* responsiveness */
+@media(max-width: 768px) {
+    .hero_image-container {
+        justify-content: flex-start;
+    }
+
+    .hero_header {
+        font-size: 2rem;
+        margin-top: 7rem;
+    }
+
+    .hero_subtext {
+        width: 85%;
+        font-size: .875rem;
+    }
+
+    .hero_box {
+        flex-direction: column;
+        width: 60%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .hero_box-box {
+        width: 100%;
+    }
+
+    .hero_box-box2 {
+        border: none;
+    }
+
+    .hero_box-header {
+        margin: .5rem 0;
+    }
+
+    .hero_box-btn {
+        margin-bottom: .5rem;
+        font-size: .8rem;
+    }
+}

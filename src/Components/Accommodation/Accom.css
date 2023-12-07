@@ -24,6 +24,12 @@
     gap: 1.5rem;
 }
 
+.accom_grid-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .accom_card-img {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -32,7 +38,7 @@
     background-size: cover;
     position: relative;
     color: #fff;
-    padding: 2.5rem 5%;
+    padding: 8rem 5%;
     height: 100%;
     cursor: pointer;
 
@@ -93,4 +99,25 @@
     text-align: center;
     margin-top: .7rem;
     color: #707070;
+}
+
+/* responsiveness */
+@media(max-width: 768px) {
+    .accom_subtext {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    .accom_grid-container {
+        display: block;
+    }
+
+    .accom_card-img {
+        height: 200px;
+        padding: 1rem 5%;
+    }
+
+    .accom_card-bottom-container {
+        margin-bottom: 2rem;
+    }
 }
