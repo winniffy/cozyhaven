@@ -85,7 +85,7 @@ const Accom = ({
             <img src={heartIcon} alt="" className="accom_card-like-icon" />
             {/* accomodation card price & rating flex */}
             <div className="accom_price_rating-flex">
-              <p className="accom_price">$70/Night</p>
+              <p className="accom_price">$50/Night</p>
               <span className="accom_rating-flex">
                 <img src={starIcon} alt="" className="accom_card-star-icon" />
                 <p className="accom_rating">4.8 (233)</p>
@@ -97,7 +97,7 @@ const Accom = ({
           <div className="accom_card-bottom-container">
             <span className="accom_card-bottom-text">
               <p className="accom_card-bottom-text1">
-                Bloomsbury - 1677 Mayfair Apartment in VI
+                Holborn - 1677 Mayfair Apartment in VI
               </p>
               <img
                 src={checkMarkIcon}
@@ -132,7 +132,7 @@ const Accom = ({
           <div className="accom_card-bottom-container">
             <span className="accom_card-bottom-text">
               <p className="accom_card-bottom-text1">
-                Bloomsbury - 1677 Mayfair Apartment in VI
+                Knightsbridge Penthouse -1677 Mayfair...
               </p>
               <img
                 src={checkMarkIcon}
@@ -155,7 +155,7 @@ const Accom = ({
             <img src={heartIcon} alt="" className="accom_card-like-icon" />
             {/* accomodation card price & rating flex */}
             <div className="accom_price_rating-flex">
-              <p className="accom_price">$70/Night</p>
+              <p className="accom_price">$110/Night</p>
               <span className="accom_rating-flex">
                 <img src={starIcon} alt="" className="accom_card-star-icon" />
                 <p className="accom_rating">4.8 (233)</p>
@@ -167,7 +167,7 @@ const Accom = ({
           <div className="accom_card-bottom-container">
             <span className="accom_card-bottom-text">
               <p className="accom_card-bottom-text1">
-                Bloomsbury - 1677 Mayfair Apartment in VI
+                Marylebone - 1677 Mayfair Apartment in...
               </p>
               <img
                 src={checkMarkIcon}
@@ -176,7 +176,7 @@ const Accom = ({
               />
             </span>
             <p className="accom_card-bottom-text2">
-              4 guests — 2 bedrooms — 2 beds — 2.5 baths — Wifi — Air
+              6 guests — 3 bedrooms — 3 beds — 3.5 baths — Wifi — Air
               conditioning — Kitchen — Washer
             </p>
           </div>
