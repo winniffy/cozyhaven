@@ -21,6 +21,15 @@ import locationImg1 from "./Assets/location1.webp";
 import locationImg2 from "./Assets/location2.webp";
 import locationImg3 from "./Assets/location3.webp";
 import locationImg4 from "./Assets/location4.webp";
+import Perks from "./Components/Perks/Perks";
+import wifi from "./Assets/wifi.svg";
+import security from "./Assets/security.svg";
+import netflix from "./Assets/netflix.svg";
+import towel from "./Assets/towel.svg";
+import dstv from "./Assets/dstv.svg";
+import tv from "./Assets/tv.svg";
+import sheet from "./Assets/sheet.svg";
+import kitchen from "./Assets/meal.svg";
 
 function App() {
   return (
@@ -49,6 +58,16 @@ function App() {
         locationImg2={locationImg2}
         locationImg3={locationImg3}
         locationImg4={locationImg4}
+      />
+      <Perks
+        wifi={wifi}
+        security={security}
+        netflix={netflix}
+        towel={towel}
+        dstv={dstv}
+        tv={tv}
+        sheet={sheet}
+        kitchen={kitchen}
       />
     </>
   );

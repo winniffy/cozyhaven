@@ -22,6 +22,9 @@ const Locations = ({
     <section className="location_section">
       {/* location header */}
       <h4 className="location_header">Top Trending Locations</h4>
+      <p className="vac_subtext">
+        Scroll through the hottest locations we've got.
+      </p>
       <article className="location_section-container">
         {/* location left box */}
         <motion.div

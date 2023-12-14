@@ -2,13 +2,9 @@
     margin: 7rem 0 5rem;
     padding: 1rem 5%;
     line-height: 1.5;
-
-    /* border: 1px solid red; */
 }
 
 .location_section-container {
-    /* border: 1px solid red; */
-
     position: relative;
     padding: 16rem 0;
 }
@@ -21,8 +17,6 @@
 }
 
 .location_left-box {
-    /* border: 1px solid red; */
-
     position: absolute;
     left: 0;
     top: 7rem;
@@ -93,6 +87,7 @@
   background-size: cover;
   height: 500px;
   border-radius: 30px;
+  position: relative;
 }
 
 .each-slide-effect span {
@@ -102,9 +97,58 @@
   text-align: center;
 }
 
+.location_price {
+    background-color: #008080;
+    color: #fff;
+    position: absolute;
+    left: 1.5rem;
+    top: 4%;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+}
+
+.default-nav {
+    opacity: 0.7;
+}
+
 .indicators {
     position: absolute;
     right: 0;
-    left: 0;
+    left: 25rem;
     bottom: 0;
+    padding: 0;
+}
+
+@media(max-width: 500px) {
+    .react-slideshow-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .location_left-box {
+        width: fit-content;
+        left: 0;
+        right: 0;
+        margin: 0 2rem;
+        top: 25rem;
+        height: 35%;
+    }
+
+    .location_left-box_header {
+        width: 90%;
+        font-size: .9rem;
+    }
+
+    .location_btn {
+        font-size: .8rem;
+        width: 10rem;
+        padding: .4rem .8rem;
+    }
+
+    .indicators {
+        bottom: 7rem;
+        right: 0;
+        left: 0;
+    }
+
 }

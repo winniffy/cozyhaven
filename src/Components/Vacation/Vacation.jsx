@@ -34,7 +34,7 @@ const Vacation = ({
     >
       <h4 className="vacay_header">More Vacation Homes to Explore In Lagos</h4>
       <p className="vac_subtext">
-        Guests concur taht these lodgings excel in location, hygiene, and
+        Guests concur that these lodgings excel in location, hygiene, and
         beyond. This is where your vacation should be - your home away from
         home.
       </p>
