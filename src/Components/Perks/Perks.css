@@ -16,3 +16,64 @@
     color: #707070;
     margin: 0 auto 2rem;
 }
+
+.perks_section-grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "a b c d"
+    "e f g h"
+    ;
+    gap: 2rem;
+}
+
+.perks_card {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    color: #595959;
+}
+
+.perks_card:hover {
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+    
+}
+
+.perks_card-1,
+.perks_card-3,
+.perks_card-6,
+.perks_card-8 {
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.perks_card-2,
+.perks_card-4,
+.perks_card-5,
+.perks_card-7 {
+    background-color: #006B6B;
+    color: #fff;
+}
+
+.perks_card-icon {
+    width: 50px;
+}
+
+.perks_card-subtext {
+    font-size: .85rem;
+}
+
+@media(max-width: 500px) {
+    .perks_section {
+        margin-top: 15rem;
+    }
+
+    .perks_section-grid_container {
+        display: block;
+    }
+
+    .perks_card {
+        margin-bottom: 2rem;
+    }
+}

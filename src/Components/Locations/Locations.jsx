@@ -57,17 +57,17 @@ const Locations = ({
             </div>
             <div className="each-slide-effect">
               <div style={{ backgroundImage: `url(${slideImages[1]})` }}>
-                <div className="location_price">NGN40,000/Day</div>
+                <div className="location_price">NGN50,000/Day</div>
               </div>
             </div>
             <div className="each-slide-effect">
               <div style={{ backgroundImage: `url(${slideImages[2]})` }}>
-                <div className="location_price">NGN40,000/Day</div>
+                <div className="location_price">NGN45,000/Day</div>
               </div>
             </div>
             <div className="each-slide-effect">
               <div style={{ backgroundImage: `url(${slideImages[3]})` }}>
-                <div className="location_price">NGN40,000/Day</div>
+                <div className="location_price">NGN60,000/Day</div>
               </div>
             </div>
           </Slide>
