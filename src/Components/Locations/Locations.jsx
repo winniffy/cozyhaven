@@ -21,10 +21,17 @@ const Locations = ({
   return (
     <section className="location_section">
       {/* location header */}
-      <h4 className="location_header">Top Trending Locations</h4>
-      <p className="vac_subtext">
-        Scroll through the hottest locations we've got.
-      </p>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <h4 className="location_header">Top Trending Locations</h4>
+        <p className="vac_subtext">
+          Scroll through the hottest locations we've got.
+        </p>
+      </motion.div>
       <article className="location_section-container">
         {/* location left box */}
         <motion.div
@@ -32,7 +39,7 @@ const Locations = ({
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          // viewport={{ once: true }}
         >
           <p className="location_left-box_header">
             Awesome 2-Bedroom Apartment in Ajah, Lagos with Free WiFi Internet.
@@ -47,7 +54,7 @@ const Locations = ({
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
+          // viewport={{ once: true }}
         >
           <Slide indicators duration={100000}>
             <div className="each-slide-effect">

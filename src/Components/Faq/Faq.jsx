@@ -47,7 +47,13 @@ const Faq = () => {
   };
 
   return (
-    <section className="faq_container">
+    <motion.section
+      className="faq_container"
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
       <h4 className="faq_header">Frequently Asked Questions</h4>
 
       {faqsData.map(({ title, details }, index) => (
@@ -77,7 +83,7 @@ const Faq = () => {
           )}
         </div>
       ))}
-    </section>
+    </motion.section>
   );
 };
 

@@ -8,10 +8,9 @@ const Feel = ({ logoWhite, feelImg }) => {
     <motion.div
       className="feel_container"
       style={feelImgBg}
-      initial={{ opacity: 0, translateX: 100 }}
-      whileInView={{ opacity: 1, translateX: 0 }}
+      initial={{ opacity: 0, translateY: 100 }}
+      whileInView={{ opacity: 1, translateY: 0 }}
       transition={{ duration: 0.5 }}
-      viewport={{ once: true }}
     >
       <img src={logoWhite} alt="cozyhaven logo" className="feel_logo" />
       <p className="feel_subtext">Feel at home wherever you go</p>
