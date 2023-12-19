@@ -1,0 +1,25 @@
+.feel_container {
+    margin: 10rem 5%;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 0;
+    border-radius: 30px;
+}
+
+.feel_subtext {
+    font-style: italic;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+@media(max-width: 500px) {
+    .feel_logo {
+        width: 150px;
+    }
+
+    .feel_subtext {
+        font-size: 1rem;
+    }
+}

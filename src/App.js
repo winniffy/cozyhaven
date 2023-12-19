@@ -30,6 +30,10 @@ import dstv from "./Assets/dstv.svg";
 import tv from "./Assets/tv.svg";
 import sheet from "./Assets/sheet.svg";
 import kitchen from "./Assets/meal.svg";
+import Feel from "./Components/Feel/Feel";
+import feelImg from "./Assets/feelathome.png";
+import logoWhite from "./Assets/logowhite.svg";
+import Faq from "./Components/Faq/Faq";
 
 function App() {
   return (
@@ -69,6 +73,8 @@ function App() {
         sheet={sheet}
         kitchen={kitchen}
       />
+      <Feel logoWhite={logoWhite} feelImg={feelImg} />
+      <Faq />
     </>
   );
 }
