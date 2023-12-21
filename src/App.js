@@ -41,6 +41,7 @@ import testiImg3 from "./Assets/testi3.png";
 import testiImg4 from "./Assets/testi4.png";
 import testiImg5 from "./Assets/testi5.png";
 import testiImg6 from "./Assets/testi6.png";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -91,6 +92,7 @@ function App() {
         testiImg6={testiImg6}
         starIcon={starIcon}
       />
+      <Footer logo={logo} />
     </>
   );
 }

@@ -33,9 +33,11 @@ const Navbar = ({ logo }) => {
         <a href="#">
           <li className="navitem">Home</li>
         </a>
-        <li className="navitem apartment_item">
-          Apartment Type <ExpandMoreRoundedIcon />
-        </li>
+        <a href="">
+          <li className="navitem apartment_item">
+            Apartment Type <ExpandMoreRoundedIcon />
+          </li>
+        </a>
         <a href="#">
           <li className="navitem">About Us</li>
         </a>

@@ -21,6 +21,12 @@ ul, a {
 
 .navitem {
     color: var(--primaryColor);
+    transition: all .2s ease-in-out;
+}
+
+.navitem:hover {
+    color: #008080;
+    transform: scale(1.05);
 }
 
 .apartment_item {
