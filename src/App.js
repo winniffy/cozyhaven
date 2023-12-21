@@ -34,6 +34,13 @@ import Feel from "./Components/Feel/Feel";
 import feelImg from "./Assets/feelathome.png";
 import logoWhite from "./Assets/logowhite.svg";
 import Faq from "./Components/Faq/Faq";
+import Testimonial from "./Components/Testimonial/Testimonial";
+import testiImg1 from "./Assets/testi1.png";
+import testiImg2 from "./Assets/testi2.png";
+import testiImg3 from "./Assets/testi3.png";
+import testiImg4 from "./Assets/testi4.png";
+import testiImg5 from "./Assets/testi5.png";
+import testiImg6 from "./Assets/testi6.png";
 
 function App() {
   return (
@@ -75,6 +82,15 @@ function App() {
       />
       <Feel logoWhite={logoWhite} feelImg={feelImg} />
       <Faq />
+      <Testimonial
+        testiImg1={testiImg1}
+        testiImg2={testiImg2}
+        testiImg3={testiImg3}
+        testiImg4={testiImg4}
+        testiImg5={testiImg5}
+        testiImg6={testiImg6}
+        starIcon={starIcon}
+      />
     </>
   );
 }
