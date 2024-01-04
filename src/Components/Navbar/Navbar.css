@@ -37,6 +37,22 @@ ul, a {
 .apartment_item {
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.apartment_item-menu {
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    border-radius: 10px;
+}
+
+.apartment_item-menu_item {
+    font-size: .7rem;
+    color: #565656;
 }
 
 .navbuttons {

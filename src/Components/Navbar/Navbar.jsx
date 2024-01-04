@@ -8,6 +8,9 @@ const Navbar = ({ logo }) => {
   // mobile menu state
   const [isMenuOpen, setMenuOpen] = useState(false);
 
+  // apartment dropdown state
+  const [isDropdown, setDropdown] = useState(false);
+
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -23,6 +26,26 @@ const Navbar = ({ logo }) => {
     show: { opacity: 1 },
   };
 
+  const apartmentMenuAnimate = {
+    show: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+      },
+      display: "block",
+    },
+
+    exit: {
+      opacity: 0,
+      transition: {
+        duration: 0.5,
+      },
+      transitionEnd: {
+        display: "none",
+      },
+    },
+  };
+
   return (
     <nav>
       {/* logo */}
@@ -30,13 +53,33 @@ const Navbar = ({ logo }) => {
 
       {/* nav list items */}
       <ul className="navlist">
-        <a href="#">
+        <a href="/">
           <li className="navitem">Home</li>
         </a>
-        <a href="">
-          <li className="navitem apartment_item">
+        {/* navbar drop down menu */}
+        <a href="/">
+          <motion.li
+            className="navitem apartment_item"
+            onHoverStart={() => setDropdown(!isDropdown)}
+            onHoverEnd={() => setDropdown(false)}
+            onMouseEnter={() => setDropdown(!isDropdown)}
+            onMouseLeave={() => setDropdown(false)}
+          >
             Apartment Type <ExpandMoreRoundedIcon />
-          </li>
+            {/* apartment menu */}
+            <motion.ul
+              className="apartment_item-menu"
+              variants={apartmentMenuAnimate}
+              initial={"exit"}
+              animate={isDropdown ? "show" : "exit"}
+            >
+              <li className="apartment_item-menu_item">Studio Apartment</li>
+              <li className="apartment_item-menu_item">Bedroom Apartment</li>
+              <li className="apartment_item-menu_item">Corporate Apartment</li>
+              <li className="apartment_item-menu_item">Duplex Apartment</li>
+              <li className="apartment_item-menu_item">Studio Apartment</li>
+            </motion.ul>
+          </motion.li>
         </a>
         <a href="#">
           <li className="navitem">About Us</li>
